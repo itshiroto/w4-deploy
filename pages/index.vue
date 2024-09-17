@@ -1,6 +1,8 @@
 <script setup>
-let name = process.env.STUDENT_NAME ?? "Agus"
-let nim = process.env.STUDENT_NIM ?? "00000012345"
+const config = useRuntimeConfig()
+
+let name = config.public.STUDENT_NAME ?? "Agus"
+let nim = config.public.STUDENT_NIM ?? "00000012345"
 </script>
 
 <template>

@@ -1,0 +1,9 @@
+services:
+  my-app:
+    build:
+      context: .
+      args:
+        STUDENT_NAME: "Rivo Juicer Wowor"
+        STUDENT_NIM: "00000059635"
+    ports:
+      - '3000:3000'
